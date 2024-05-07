@@ -8,5 +8,12 @@ export const sequelize = new Sequelize({
   host: config.host,
 
   dialect: "postgres",
-  storage: ":memory:",
+  //storage: ":memory:",
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false // added for self-signed certificates
+    }
+  },
+  logging: console.log // Enable logging
 });
