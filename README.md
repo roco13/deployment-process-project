@@ -15,8 +15,8 @@ The project will also include writing documentation and runbooks covering the op
 # Udagram
 
 This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
-
-
+#### Link to the application
+[Udagram](http://myudabucket4390092289347.s3-website-us-east-1.amazonaws.com)
 
 ### Dependencies
 
@@ -50,6 +50,9 @@ This project contains two different test suite: unit tests and End-To-End tests(
 1. `cd starter/udagram-frontend`
 1. `npm run test`
 1. `npm run e2e`
+(NOTE: You might need to run in the terminal export NODE_OPTIONS=--openssl-legacy-provider before running the test to solve:
+    'error:03000086:digital envelope routines::initialization error',
+    'error:0308010C:digital envelope routines::unsupported' )
 
 There are no Unit test on the back-end
 
