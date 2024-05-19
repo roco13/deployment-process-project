@@ -24,29 +24,29 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
-      # TODO: Install dependencies in the the backend API          
+      # Install dependencies in the the backend API          
       - run:
           name: Install API Dependencies
           command: |
-           echo "TODO: Install dependencies in the the backend API  "
+           echo "Install dependencies in the the backend API  "
            npm run api:install
-      # TODO: Lint the frontend
+      # Lint the frontend
       - run:
           name: Front-End Lint
           command: |
-            echo "TODO: Lint the frontend"
+            echo "Lint the frontend"
             npm run frontend:lint
-      # TODO: Build the frontend app
+      # Build the frontend app
       - run:
           name: Front-End Build
           command: |
-            echo "TODO: Build the frontend app"
+            echo "Build the frontend app"
             npm run frontend:build
-      # TODO: Build the backend API      
+      # Build the backend API      
       - run:
           name: API Build
           command: |
-            echo "TODO: Build the backend API"
+            echo "Build the backend API"
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
@@ -60,10 +60,10 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Deploy Api
-          # TODO: Install, build, deploy in both frontend and backend
+          name: Deploy Frontend and Api
+          # Install, build, deploy in both frontend and backend
           command: |
-            echo "# TODO: Install, build, deploy in both frontend and backend"
+            echo "Install, build, deploy in both frontend and backend"
             npm run deploy
       
           
