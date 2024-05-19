@@ -61,9 +61,9 @@ jobs:
       - checkout
       - run:
           name: Deploy Api
-          # TODO: Install, build, deploy in both apps
+          # TODO: Install, build, deploy in both frontend and backend
           command: |
-            echo "# TODO: Install, build, deploy in both apps"
+            echo "# TODO: Install, build, deploy in both frontend and backend"
             npm run deploy
       
           
