@@ -80,6 +80,4 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy:
-          requires:
-            - hold
+      - deploy
